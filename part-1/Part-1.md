@@ -59,3 +59,21 @@ The Todo App version v0.1 has been published to Docker hub [frankhul/todo-app:v0
 #### Create a deployment for the todo-app v0.1 (frankhul/todo-app:v0.1 image)
 
 ![Create Todo App v0.1 Deployment](1.02/img/1.02_create_todo_app_deployment.png)
+
+**Exercise 1.03: Declarative approach**
+
+In your "Log output" application create a folder for manifests and move your deployment into a declarative file.
+
+Make sure everything still works by restarting and following logs.
+
+Submission
+
+The deployment declaration file for exercise 1.03 is [Exercise 1.03 Deployment](../apps/log-output/manifests/exercise_1.03/deployment.yml)
+
+#### View logs of the the Log Output Application declarative created
+
+![Declarative created log output app logs](1.03/img/1.03_declarative_created_log_output_logs.png)
+
+#### Declarative Created a deployment for the log output application
+
+![Declarative created log output app](1.03/img/1.03_declarative_created_log_output.png)
