@@ -70,10 +70,26 @@ Submission
 
 The deployment declaration file for exercise 1.03 is [Exercise 1.03 Deployment](../apps/log-output/manifests/exercise_1.03/deployment.yml)
 
-#### View logs of the the Log Output Application declarative created
+#### View logs for the Log Output Application declarative created
 
 ![Declarative created log output app logs](1.03/img/1.03_declarative_created_log_output_logs.png)
 
-#### Declarative Created a deployment for the log output application
+#### Declarative Created deployment for the log output application
 
 ![Declarative created log output app](1.03/img/1.03_declarative_created_log_output.png)
+
+**Exercise 1.04: Project v0.2**
+
+Create a deployment.yaml for the project.
+
+Submission
+
+The deployment declaration file for exercise 1.04 is [Exercise 1.04 Deployment](../apps/todo-app/manifests/exercise_1.04/deployment.yml)
+
+#### View logs for the todo-app v0.1 (frankhul/todo-app:v0.1 image) declarative created
+
+![Declarative created todo app v0.1 logs](1.04/img/1.04_declarative_created_todo_app_v0.1_logs.png)
+
+#### Declarative created deployment for the todo-app v0.1 (frankhul/todo-app:v0.1 image)
+
+![Declarative created todo app v0.1](1.04/img/1.04_declarative_created_todo_app_v0.1.png)
