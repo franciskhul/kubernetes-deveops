@@ -139,7 +139,39 @@ The deployment declaration file for exercise 1.06 is [Exercise 1.06 Deployment](
 The todo app is listening to port **8080**.
 
 Creating the service.
+
 ![Create Service](1.06/img/1.06_creating_service.png)
 
 The image of visiting the website
+
 ![Todo App V0.3 Website](1.06/img/1.06_todo_app_v0.3_website.png)
+
+**Exercise 1.07: External access with Ingress**
+
+"Log output" application currently outputs a timestamp and a random string to the logs.
+
+Add an endpoint to request the current status (timestamp and string) and an ingress so that you can access it with a browser.
+
+You can just store the string and timestamp to the memory.
+
+Submission:
+
+The service file for exercise 1.07 is [Exercise 1.07 Service](../apps/log-output/manifests/exercise_1.07/service.yml)
+
+The ingress file for exercise 1.07 is [Exercise 1.07 Ingress](../apps/log-output/manifests/exercise_1.07/ingress.yml)
+
+The deployment file for exercise 1.07 is [Exercise 1.07 Deployment](../apps/log-output/manifests/exercise_1.07/deployment.yml)
+
+The new version of the log-output application has been published on Docker hub [frankhul/log-output:v0.2](https://hub.docker.com/repository/docker/frankhul/log-output/tags/v0.2/sha256:0ecf1ecaba4e60c6481a7b7397cd8a5a958f840c1ebdd64aa55199379469aafe)
+
+The screenshot showing the return of the timestamp and random string
+
+![Exercise 1.07 TimeStamp String Return](1.07/img/1.07_timestamp_string_return.png)
+
+The screenshot showing the creation of the service
+
+![Exercise 1.07 Service Creation](1.07/img/1.07_service_creation.png)
+
+The screenshot showing the creation of the ingress
+
+![Exercise 1.07 Ingress Creation](1.07/img/1.07_ingress_creation.png)
