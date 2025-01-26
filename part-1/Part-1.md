@@ -93,3 +93,35 @@ The deployment declaration file for exercise 1.04 is [Exercise 1.04 Deployment](
 #### Declarative created deployment for the todo-app v0.1 (frankhul/todo-app:v0.1 image)
 
 ![Declarative created todo app v0.1](1.04/img/1.04_declarative_created_todo_app_v0.1.png)
+
+**Exercise 1.05: Project v0.3**
+
+Have the project respond something to a GET request sent to the project. A simple html page is good or you can deploy something more complex like a single-page-application.
+
+Use kubectl port-forward to confirm that the project is accessible and works in the cluster by using a browser to access the project
+
+Submission
+
+The Todo App version v0.3 has been published to Docker hub [frankhul/todo-app:v0.3](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.3/sha256-9e09ee7cbab5b38fbc3d222d4bdfb6b89c49c7fb707db79f903015af75a3cb62)
+
+The deployment declaration file for exercise 1.05 is [Exercise 1.05 Deployment](../apps/todo-app/manifests/exercise_1.05/deployment.yml)
+
+#### Website image
+
+![Todo app v0.3 Simple Website](1.05/img/1.05_todo_app_v0.3_website.png)
+
+#### View logs for the todo-app v0.3 (frankhul/todo-app:v0.3 image) declarative created
+
+![Todo app v0.3 logs with html](1.05/img/1.05_todo_app_v0.3_logs_with_html.png)
+
+#### Port forwading from 3000 to 8080 the port where the todo-app v0.3 is listening on
+
+![Port Forwaring to todo app v0.3](1.05/img/1.05_port_forwaring.png)
+
+#### Get pod name for the todo-app v0.3
+
+![Get pod name for the todo-app v0.3](1.05/img/1.05_todo_app_v0.3_name.png)
+
+#### Created the deployment for the todo-app v0.3 (frankhul/todo-app:v0.3 image)
+
+![Deployment creation for Todo app v0.3](1.05/img/1.05_todo_app_v0.3.png)

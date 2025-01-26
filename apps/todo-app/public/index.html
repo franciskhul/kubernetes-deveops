@@ -1,0 +1,65 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kubernetes Theme</title>
+  <style>
+    body {
+      background-color: #1e1e1e; /* Dark background */
+      color: #d4d4d4; /* Light text */
+      font-family: 'Fira Code', monospace; /* Developer-like font */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #569cd6; /* Vibrant blue for header */
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #9cdcfe; /* Softer blue for paragraph */
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: #c586c0; /* Purple for links */
+      text-decoration: none;
+      border-bottom: 2px solid #c586c0;
+    }
+    
+    a:hover {
+      color: #d7ba7d; /* Light yellow on hover */
+      border-color: #d7ba7d;
+    }
+
+    /* Add some subtle animations */
+    h1, p {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Welcome to Kubernetes!</h1>
+    <p>Explore more at the <a href="https://kubernetes.io" target="_blank">Kubernetes Documentation</a>.</p>
+  </div>
+</body>
+</html>
