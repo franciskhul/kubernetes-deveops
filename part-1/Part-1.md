@@ -10,7 +10,7 @@ Deploy it into your Kubernetes cluster and confirm that it's running with `kubec
 
 Submission
 
-The Log Output application has been published to Docker hub [frankhul/log-output](https://hub.docker.com/r/frankhul/log-output)
+The Log Output application has been published to Docker hub [frankhul/log-output:v0.1](https://hub.docker.com/repository/docker/frankhul/log-output/tags/v0.1/sha256:2ca70409f7d99f6c7abb45a6e20e48ec6441700dd9708d38cc208e2960010a57)
 
 ##### View logs of the the Log Output image
 
