@@ -125,3 +125,21 @@ The deployment declaration file for exercise 1.05 is [Exercise 1.05 Deployment](
 #### Created the deployment for the todo-app v0.3 (frankhul/todo-app:v0.3 image)
 
 ![Deployment creation for Todo app v0.3](1.05/img/1.05_todo_app_v0.3.png)
+
+**Exercise 1.06: Project v0.4**
+
+Use a NodePort Service to enable access to the project.
+
+Submission
+
+The service file for exercise 1.06 is [Exercise 1.06 Service](../apps/todo-app/manifests/exercise_1.06/service.yml)
+
+The deployment declaration file for exercise 1.06 is [Exercise 1.06 Deployment](../apps/todo-app/manifests/exercise_1.06/deployment.yml)
+
+The todo app is listening to port **8080**.
+
+Creating the service.
+![Create Service](1.06/img/1.06_creating_service.png)
+
+The image of visiting the website
+![Todo App V0.3 Website](1.06/img/1.06_todo_app_v0.3_website.png)
