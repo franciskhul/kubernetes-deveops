@@ -142,7 +142,7 @@ Creating the service.
 
 ![Create Service](1.06/img/1.06_creating_service.png)
 
-The image of visiting the website
+#### The image of visiting the website
 
 ![Todo App V0.3 Website](1.06/img/1.06_todo_app_v0.3_website.png)
 
@@ -164,14 +164,44 @@ The deployment file for exercise 1.07 is [Exercise 1.07 Deployment](../apps/log-
 
 The new version of the log-output application has been published on Docker hub [frankhul/log-output:v0.2](https://hub.docker.com/repository/docker/frankhul/log-output/tags/v0.2/sha256:0ecf1ecaba4e60c6481a7b7397cd8a5a958f840c1ebdd64aa55199379469aafe)
 
-The screenshot showing the return of the timestamp and random string
+#### The screenshot showing the return of the timestamp and random string
 
 ![Exercise 1.07 TimeStamp String Return](1.07/img/1.07_timestamp_string_return.png)
 
-The screenshot showing the creation of the service
+#### The screenshot showing the creation of the service
 
 ![Exercise 1.07 Service Creation](1.07/img/1.07_service_creation.png)
 
-The screenshot showing the creation of the ingress
+#### The screenshot showing the creation of the ingress
 
 ![Exercise 1.07 Ingress Creation](1.07/img/1.07_ingress_creation.png)
+
+**Exercise 1.08: Project v0.5**
+
+Switch to using Ingress instead of NodePort to access the project.
+
+You can delete the ingress of the "Log output" application so they don't interfere with this exercise.
+
+We'll look more into paths and routing in the next exercise and at that point you can configure project to run with the "Log output" application side by side.
+
+Submission:
+
+The todo app is listening to port **8080**.
+
+The service file for exercise 1.07 is [Exercise 1.08 Service](../apps/todo-app/manifests/exercise_1.08/service.yml)
+
+The ingress file for exercise 1.07 is [Exercise 1.08 Ingress](../apps/todo-app/manifests/exercise_1.08/ingress.yml)
+
+The deployment file for exercise 1.07 is [Exercise 1.08 Deployment](../apps/todo-app/manifests/exercise_1.08/deployment.yml)
+
+#### The screenshot showing the access of the todo-app website
+
+![Exercise 1.08 Todo App Website Access](1.08/img/1.08_todo_app_website.png)
+
+#### The screenshot showing the creation of the service
+
+![Exercise 1.08 Service Creation](1.08/img/1.08_service_creation.png)
+
+#### The screenshot showing the creation of the ingress
+
+![Exercise 1.08 Ingress Creation](1.08/img/1.08_ingress_creation.png)
