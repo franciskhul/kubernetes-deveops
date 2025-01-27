@@ -1,0 +1,17 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18.8.0
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+
+# Install any necessary dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+CMD [ "node", "index.js" ]

@@ -234,4 +234,40 @@ The ping pong image for the exercise 1.09 has been published to docker hub [fran
 
 #### The screenshot showing the access of the logout-put application
 
-![Exercise 1.09 Logout Put Access](1.09/img/1.09_logout_put_access.png)
+![Exercise 1.09 Log-output Access](1.09/img/1.09_logout_put_access.png)
+
+**Exercise 1.10: Even more services**
+
+Split the "Log output" application into two different containers within a single pod:
+
+One generates a new timestamp every 5 seconds and saves it into a file.
+
+The other reads that file and outputs it with a hash for the user to see.
+
+Either application can generate the hash. The reader or the writer.
+
+You may find this helpful now since there are more than one container running inside a pod.
+
+Submission:
+
+The deployment for the split log-output application [Split Logoutput](../apps/log-output-exercise-1.10/manifest/exercise_1.10/deployment.yml)
+
+The log-output reader application is at the following folder [log-output-reader](../apps/log-output-exercise-1.10/reader/)
+
+The image for the log-output reader is published on Docker hub [frankhul/log-output-reader:v0.1](https://hub.docker.com/repository/docker/frankhul/log-output-reader/tags/v0.1/sha256-e59d1a03574aa25ad911eea5650a80f77229f08dfa394dcb74ea58ff57cdc3ee)
+
+The log-output writter application is at the following folder [log-output-writer](../apps/log-output-exercise-1.10/writer/)
+
+The image for the log-output writer is published on Docker hub [frankhul/log-output-writer:v0.1](https://hub.docker.com/repository/docker/frankhul/log-output-writer/tags/v0.1/sha256:0d1a03c816c4508a7db679591c68fcebaa6e6ad7dde05cf1066bed8fac4c3d79)
+
+#### The screenshot showing the creation of the deployment
+
+![Exercise 1.10 Deployment creation](1.10/img/1.10_create_split_log_output_deployment.png)
+
+#### The screenshot showing the logs for the reader log output
+
+![Exercise 1.10 Logs for the reader log output](1.10/img/1.10_logs_for_reader_log_output.png)
+
+#### The screenshot showing the logs for the writer log output
+
+![Exercise 1.10 Logs for the writer log output](1.10/img/1.10_logs_for_writer_log_output.png)

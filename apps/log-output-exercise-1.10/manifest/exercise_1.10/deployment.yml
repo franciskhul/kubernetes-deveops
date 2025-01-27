@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: split-log-output-deployment
+spec:
+  replicas: 1  # You can adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: split-log-output
+  template:
+    metadata:
+      labels:
+        app: split-log-output
+    spec:
+      containers:
+        - name: writer-container
+          image: frankhul/log-output-writer:v0.1  # Replace with your Docker image name
+          volumeMounts:
+            - mountPath: /usr/src/app/files
+              name: timestamps-volume
+        - name: reader-container
+          image: frankhul/log-output-reader:v0.1  # Replace with your Docker image name
+          volumeMounts:
+            - mountPath: /usr/src/app/files
+              name: timestamps-volume
+      volumes:
+        - name: timestamps-volume
+          emptyDir: {}  # This volume will be shared between the writer and reader containers
