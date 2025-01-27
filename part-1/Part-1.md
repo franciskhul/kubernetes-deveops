@@ -205,3 +205,33 @@ The deployment file for exercise 1.07 is [Exercise 1.08 Deployment](../apps/todo
 #### The screenshot showing the creation of the ingress
 
 ![Exercise 1.08 Ingress Creation](1.08/img/1.08_ingress_creation.png)
+
+**Exercise 1.09: More services**
+
+Develop a second application that simply responds with "pong 0" to a GET request and increases a counter (the 0) so that you can see how many requests have been sent. The counter should be in memory so it may reset at some point.
+
+Submission:
+
+The ping pong application is listening on port **4000**
+
+The service file for the ping pong application for exercise 1.09 is [Exercise 1.09 Ping Pong Service](../apps/ping-pong/manifests/exercise_1.09/service.yml)
+
+The ingress file for the ping pong application for exercise 1.09 is [Exercise 1.09 Ping Pong Service](../apps/ping-pong/manifests/exercise_1.09/ingress.yml)
+
+The ping pong image for the exercise 1.09 has been published to docker hub [frankhul/ping-pong:v0.1](https://hub.docker.com/repository/docker/frankhul/ping-pong/tags/v0.1/sha256-c032756d0272cb07a16b20360a2ed6c49f868eea4d9d9a658b3a6409f47540a0)
+
+#### The screenshot showing the access of the ping pong application
+
+![Exercise 1.09 Ping Pong Access](1.09/img/1.09_ping_pong_access.png)
+
+#### The screenshot showing the creation of the service
+
+![Exercise 1.09 Service Creation](1.09/img/1.09_creating_ping_pong_service.png)
+
+#### The screenshot showing the creation of the ingress
+
+![Exercise 1.09 Ingress Creation](1.09/img/1.09_creating_ingress.png)
+
+#### The screenshot showing the access of the logout-put application
+
+![Exercise 1.09 Logout Put Access](1.09/img/1.09_logout_put_access.png)
