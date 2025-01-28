@@ -271,3 +271,42 @@ The image for the log-output writer is published on Docker hub [frankhul/log-out
 #### The screenshot showing the logs for the writer log output
 
 ![Exercise 1.10 Logs for the writer log output](1.10/img/1.10_logs_for_writer_log_output.png)
+
+**Exercise 1.11: Persisting data**
+
+Let's share data between "Ping-pong" and "Log output" applications using persistent volumes. Create both a PersistentVolume and PersistentVolumeClaim and alter the Deployment to utilize it. As PersistentVolumes are often maintained by cluster administrators rather than developers and those are not application specific you should keep the definition for those separated, perhaps in own folder.
+
+Save the number of requests to "Ping-pong" application into a file in the volume and output it with the timestamp and hash when sending a request to our "Log output" application. In the end, the two pods should share a persistent volume between the two applications. So the browser should display the following when accessing the "Log output" application:
+
+2020-03-30T12:15:17.705Z: 8523ecb1-c716-4cb6-a044-b9e83bb98e43.
+Ping / Pongs: 3
+
+Submission:
+
+The deployment for this exercise [Deployment](../apps/ping-pong-log-output-data-sharing//manifests/deployment.yaml)
+
+The Persistent Volume defination [Persistent Volume](../apps/ping-pong-log-output-data-sharing/manifests/persistentvolume.yaml)
+
+The Persistent Volume Claim defination [Persistent Volume Claim](../apps/ping-pong-log-output-data-sharing/manifests/persistentvolumeclaim.yaml)
+
+The Ingress defination [Ingress](../apps/ping-pong-log-output-data-sharing/manifests/ingress.yaml)
+
+The log output service (clusterIP type) defination [Log Output Service](../apps/ping-pong-log-output-data-sharing/manifests/service_log_output.yaml)
+
+The ping pong service (clusterIP type) defination [Ping Pong Service](../apps/ping-pong-log-output-data-sharing/manifests/service_ping_pong.yaml)
+
+#### The screenshot for output of the ping pong request
+
+![Ping Pong Output](1.11/img/1.11_pingpong_request_output.png)
+
+#### The screenshot for the output of the logoutput request
+
+![Logoutput Request](1.11/img/1.11_logoutput_request_output.png)
+
+#### Screenshot for the creation of persistent volume
+
+![Persistent Volume Creation](1.11/img/1.11_create_persistent_volume.png)
+
+#### Screenshot for the creation of the persistent volume claim
+
+![Persistent Volume Claim Creation](1.11/img/1.11_create_persistent_volume_claim.png)

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ping-pong-log-output-data-sharing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ping-pong-log-output-data-sharing
+  template:
+    metadata:
+      labels:
+        app: ping-pong-log-output-data-sharing
+    spec:
+      volumes:
+        - name: shared-data
+          persistentVolumeClaim:
+            claimName: shared-claim
+      containers:
+        - name: log-output-data-sharing
+          image: frankhul/log-output-data-sharing:v.1
+          volumeMounts:
+            - name: shared-data
+              mountPath: /usr/src/app/data
+          env:
+            - name: PORT
+              value: "3000"
+          ports:
+            - containerPort: 3000
+        - name: ping-pong-data-sharing
+          image: frankhul/ping-pong-data-sharing:v.1
+          volumeMounts:
+            - name: shared-data
+              mountPath: /usr/src/app/data
+          env:
+            - name: PORT
+              value: "4000"
+          ports:
+            - containerPort: 4000
