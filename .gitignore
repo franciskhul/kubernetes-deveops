@@ -1,3 +1,4 @@
 /apps/*/node_modules/
 /apps/*/.nvmrc
 *node_modules
+*.tool-versions

@@ -310,3 +310,15 @@ The ping pong service (clusterIP type) defination [Ping Pong Service](../apps/pi
 #### Screenshot for the creation of the persistent volume claim
 
 ![Persistent Volume Claim Creation](1.11/img/1.11_create_persistent_volume_claim.png)
+
+**Exercise 1.12: Project v0.6**
+
+The todo application is found in the following folder [Todo App v0.6](../apps/todo-app-v0.6/)
+
+The application has been published on docker hub [frankhul/todo-app:v0.6](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.6/sha256-70d81bfa1d9ef5d298b2717deba9614d95a9bfc751ab0525933cdafd2ff9cf74)
+
+The manifest configuration of ingress, persistentVolume, persistentVolumeClaim, service and deployment are found in the following folder [Manifest](../apps/todo-app-v0.6/manifests/)
+
+#### The screenshot of the application
+
+![Project v0.6](1.12/img/1.12_project_v0.6.png)
