@@ -34,3 +34,63 @@ The image for the Ping Pong Application has been published to docker hub [frankh
 #### Screenshot for the ping pong application
 
 ![Ping Pong Application Screenshot](2.01/img/2.01_ping_pong_screenshot.png)
+
+**Exercise 2.02: Project v1.0**
+
+Let us get back to our Project. In the previous part we added a random pic and a form for creating todos to the app. The next step is to create a new container that takes care of saving the todo items.
+
+This new service, let us call it todo-backend, should have a GET /todos endpoint for fetching the list of todos and a POST /todos endpoint for creating a new todo. The todos can be saved into memory, we'll add a database later.
+
+Use ingress routing to enable access to the todo-backend.
+
+The role of the service that we made in previous exercises (Todo-app in the figure) is to serve the HTML and possibly JavaScript to the browser. Also, the logic for serving random pictures and caching those remain in that service.
+
+The new service then takes care of the todo items.
+
+After this exercise, you should be able to create new todos using the form, and the created todos should be rendered in the browser.
+
+Submission:
+
+1. Todo Backend
+
+The todo-backend for this project is found in the following folder [Todo Backend](../apps/todo-app-v1.0/todo-backend/)
+
+The todo-backend image has been published to docker hub [frankhul/todo-backend:v0.1](https://hub.docker.com/repository/docker/frankhul/todo-backend/tags/v0.1/sha256-dd751f2487d44a66265a05ff1b929823c5d5c77c375ee835dc4b22f0d05e28d0)
+
+The deployment for the todo-backend is in the following folder [Todo Backend Deployment](../apps/todo-app-v1.0/todo-backend/manifests/deployment.yaml)
+
+The ClusterIP service for the todo-backend is in the following folder [Todo Backend Service](../apps/todo-app-v1.0/todo-backend/manifests/service.yaml)
+
+The ingress for the todo-backend is in the following folder [Todo Backend Ingress](../apps/todo-app-v1.0/todo-backend/manifests/ingress.yaml)
+
+#### Screenshot for the todo-app access
+
+[Todo Backend Access](2.02/img/2.2_todo_backend_access.png)
+
+#### Screenshot for the created deployment for the todo-backend
+
+![Todo backend Deployment Creation](2.02/img/2.2_create_todo_backend_deployment.png)
+
+#### Screenshot for the created service for the todo-backend
+
+![Todo backend Service Creation](2.02/img/2.2_create_todo_backend_service.png)
+
+#### Screenshot for the created ingress for the todo-backend
+
+![Todo backend ingress creation](2.02/img/2.2_create_todo_backend_ingress.png)
+
+2. Todo Application
+
+The todo applicaton can be found in the following folder [Todo Application](../apps/todo-app-v1.0/todo-app/)
+
+The todo-app image has been published to docker hub [frankhul/todo-app:v0.8](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.8/sha256-d1c66e0b6988eb78f97277e0f779e1b77020e6e8a272b68a2ed25d333d5756ea)
+
+The deployment for the todo-app is in the following folder [Todo App Deployment](../apps/todo-app-v1.0/todo-app/manifests/deployment.yaml)
+
+The ClusterIP service for the todo-app is in the following folder [Todo App Service](../apps/todo-app-v1.0/todo-app/manifests/service.yaml)
+
+The ingress for the todo-app is in the following folder [Todo App Ingress](../apps/todo-app-v1.0/todo-app/manifests/ingress.yaml)
+
+#### Screenshot for the todo-app access
+
+[Todo App Access](2.02/img/2.2_todo_app_access.png)
