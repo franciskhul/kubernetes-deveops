@@ -9,3 +9,5 @@ The course is divided into 5 parts and the repository also follows this structur
 Parts:
 
 ### [Part 1](part-1/Part-1.md)
+
+### [Part 2](part-2/Part-2.md)

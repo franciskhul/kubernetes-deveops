@@ -283,6 +283,8 @@ Ping / Pongs: 3
 
 Submission:
 
+The applications to this exercise is found in the following folder [Ping Pong Logoutput Application](../apps/ping-pong-log-output-data-sharing/)
+
 The deployment for this exercise [Deployment](../apps/ping-pong-log-output-data-sharing//manifests/deployment.yaml)
 
 The Persistent Volume defination [Persistent Volume](../apps/ping-pong-log-output-data-sharing/manifests/persistentvolume.yaml)
