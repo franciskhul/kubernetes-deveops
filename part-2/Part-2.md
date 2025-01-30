@@ -94,3 +94,33 @@ The ingress for the todo-app is in the following folder [Todo App Ingress](../ap
 #### Screenshot for the todo-app access
 
 [Todo App Access](2.02/img/2.2_todo_app_access.png)
+
+**Exercise 2.03: Keep them separated**
+
+Create a namespace for the applications in the exercises.
+
+Move the "Log output" and "Ping-pong" to that namespace and use that in the future for all of the exercises.
+
+You can follow the material in the default namespace.
+
+Submission
+
+- Created the namespace development. Screenshot for the creation
+
+![Development Namespace Creation](2.03/img/2.03_create_namespace.png)
+
+1. Log output
+
+- The deployment for the log output with namespace can be found [Namespaced deployment](../apps/log-output/manifests/exercise_2.03/deployment.yaml)
+
+- The ingress for the log output with namespace can be found [Namespaced ingress](../apps/log-output/manifests/exercise_2.03/ingress.yaml)
+
+- The service for the log output with namespace can be found [Namespaced Service](../apps/log-output/manifests/exercise_2.03/service.yaml)
+
+2. Ping pong
+
+- - The deployment for the ping pong with namespace can be found [Namespaced deployment](../apps/ping-pong/manifests/exercise_2.03/deployment.yaml)
+
+- The ingress for the ping pong with namespace can be found [Namespaced ingress](../apps/ping-pong/manifests/exercise_2.03/ingress.yaml)
+
+- The service for the ping pong with namespace can be found [Namespaced Service](../apps/ping-pong/manifests/exercise_2.03/service.yaml)
