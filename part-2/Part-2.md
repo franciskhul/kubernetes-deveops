@@ -124,3 +124,23 @@ Submission
 - The ingress for the ping pong with namespace can be found [Namespaced ingress](../apps/ping-pong/manifests/exercise_2.03/ingress.yaml)
 
 - The service for the ping pong with namespace can be found [Namespaced Service](../apps/ping-pong/manifests/exercise_2.03/service.yaml)
+
+**Exercise 2.04: Project v1.1**
+
+Create a namespace for the project and move everything related to the project to that namespace.
+
+Submission
+
+- Created the namespace development. Screenshot for the creation
+
+![Development Namespace Creation](2.03/img/2.03_create_namespace.png)
+
+1. todo-app
+
+- The resource manifests for the todo-app that have been moved to the new namespace development can be found in the following folder
+  [Namespaced Todo App Resources](../apps/todo-app-v1.1/todo-app/manifests/)
+
+2. todo-backend
+
+- The resources manifests for the todo-backend that have been moved to the new namespace development can be found in the following folder
+  [Namespaced Todo Backend Resources](../apps/todo-app-v1.1/todo-backend/manifests/)
