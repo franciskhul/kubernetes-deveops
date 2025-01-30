@@ -322,3 +322,13 @@ The manifest configuration of ingress, persistentVolume, persistentVolumeClaim, 
 #### The screenshot of the application
 
 ![Project v0.6](1.12/img/1.12_project_v0.6.png)
+
+**Exercise 1.13: Project v0.7**
+
+The todo application v0.7 is found in the following folder [Todo App v0.7](../apps/todo-app-v0.7/)
+
+The todo application v0.7 image has been published to docker hub [frankhul/todo-app:v0.7](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.7/sha256:24483e948e874c565bc324392a53b69cb7c1d82a555d88923cd28f46d705f3af)
+
+#### The screenshort of the application
+
+![Project v0.7](1.13/img/1.13_todo_application_v0.7.png)
