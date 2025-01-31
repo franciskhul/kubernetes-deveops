@@ -11,3 +11,5 @@ Parts:
 ### [Part 1](part-1/Part-1.md)
 
 ### [Part 2](part-2/Part-2.md)
+
+### [Part 3](part-3/Part-3.md)
