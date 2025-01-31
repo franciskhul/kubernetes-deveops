@@ -142,3 +142,15 @@ Submission:
   - **Cons**:
     - More complexity in managing reliable backups, requiring additional resources for disaster recovery.
     - Backups must be regularly tested and manually handled.
+
+**Exercise 3.08: Project v1.5**
+
+Set sensible resource limits for the project. The exact values are not important. Test what works.
+
+Submission:
+
+The todo-app project v1.5 can be found in the following folder [TODO APP v1.5](../apps/todo-app-v1.5/)
+
+Here is the todo-backend deployment with resource limit [Deployment](../apps/todo-app-v1.5/todo-backend/manifests/deployment.yaml)
+
+Here is the todo-app deployment with resource limit [Deployment](../apps/todo-app-v1.5/todo-app//manifests/deployment.yaml)
