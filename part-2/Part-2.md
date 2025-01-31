@@ -188,8 +188,28 @@ Hint: it might be a good idea to ensure that the database is operational and ava
 
 Submission
 
-- The ping pong application can be found in the following folder [Modified Ping Pong](../apps/ping-pong-exercise-2.07/)
+The ping pong application can be found in the following folder [Modified Ping Pong](../apps/ping-pong-exercise-2.07/)
 
-- The postgres statefulset can be found in the following folder [Postgres Statefulset](../apps/ping-pong-exercise-2.07/manifests/postgres-statefulset.yaml)
+The postgres statefulset can be found in the following folder [Postgres Statefulset](../apps/ping-pong-exercise-2.07/manifests/postgres-statefulset.yaml)
 
 - The service, deployment and ingress declaration files can also be found in the manifest folder [Manifest](../apps/ping-pong-exercise-2.07/manifests/)
+
+**Exercise 2.08 Project v1.2**
+
+Create a database and save the todos there. Again, the database should have its own pod.
+
+Use Secrets and/or ConfigMaps to have the backend access the database.
+
+Submission
+
+The todo application for this exercise can be found in the following folder [Todo App v1.2](../apps/todo-app-v1.2/)
+
+The todo application backend can be found in the following folder [Todo App v1.2 Todo Backed](../apps/todo-app-v1.2/todo-backend/)
+
+The postgresql statefulset declaration for the todo app can be found here[Todo App V1.2 Postgres Statefulset](../apps/todo-app-v1.2/todo-backend/manifests/postgres-statefulset.yaml)
+
+The postgresql configMap used in the postgresql statefulset can be found in here [Postgresql Statefulset ConfigMap](../apps/todo-app-v1.2/todo-backend/manifests/postgres-configMap.yaml)
+
+The image for the todo-backend has been published to docker hub [frankhul/todo-backend:v0.2](https://hub.docker.com/repository/docker/frankhul/todo-backend/tags/v0.2/sha256:5b5f9a3ee2ee5da4d5ed0ea4e7180b266a571d04f7a43d78b2c35f938902e0f3)
+
+The image for the todo-app has been published to docker hub [frankhul/todo-app:v0.9](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.9/sha256:6c6999fb12e2d837b07bd1db41f16a8ab5bc88cd3cac0225d6b3bd3a75ab5d0a)
