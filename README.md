@@ -69,3 +69,5 @@ Parts:
 [Exercise 3.09: Resource limits](part-3/Part-3.md#exercise-309-resource-limits)
 
 ### [Part 4](part-4/Part-4.md)
+
+[Exercise 4.01: Readiness Probe](part-4/Part-4.md#exercise-401-readiness-probe)

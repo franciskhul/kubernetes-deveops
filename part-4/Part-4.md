@@ -1,6 +1,6 @@
 ### [Part 4](https://devopswithkubernetes.com/part-4)
 
-**Exercise 4.01: Readiness Probe**
+## Exercise 4.01: Readiness Probe
 
 Create a ReadinessProbe for the Ping-pong application. It should be ready when it has a connection to the database.
 
