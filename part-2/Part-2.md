@@ -177,3 +177,19 @@ The ingress for log-output [Ingress Log output](../apps/log-output-exercise-2.06
 #### Screenshot for the log output output
 
 ![Log output access](2.06/img/2.06_log_output_screenshot.png)
+
+**Exercise 2.07**
+
+Run a Postgres database and save the Ping-pong application counter into the database.
+
+The Postgres database and Ping-pong application should not be in the same pod. A single Postgres database is enough and it may disappear with the cluster but it should survive even if all pods are taken down.
+
+Hint: it might be a good idea to ensure that the database is operational and available for connections before you try connecting it from the Ping-pong app. For that purpose, you might just start a stand-alone pod that runs a Postgres image:
+
+Submission
+
+- The ping pong application can be found in the following folder [Modified Ping Pong](../apps/ping-pong-exercise-2.07/)
+
+- The postgres statefulset can be found in the following folder [Postgres Statefulset](../apps/ping-pong-exercise-2.07/manifests/postgres-statefulset.yaml)
+
+- The service, deployment and ingress declaration files can also be found in the manifest folder [Manifest](../apps/ping-pong-exercise-2.07/manifests/)
