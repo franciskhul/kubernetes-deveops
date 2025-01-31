@@ -2,7 +2,7 @@
 
 **Execises For Part 1:**
 
-**Exercise 1.01: Getting started**
+## Exercise 1.01: Getting started
 
 Create an application that generates a random string on startup, stores this string into memory, and outputs it every 5 seconds with a timestamp.
 
@@ -32,7 +32,7 @@ The Log Output application has been published to Docker hub [frankhul/log-output
 
 ![Create Cluster](1.01/img/1.01_create_cluster_with_k3d.png)
 
-**Exercise 1.02: Project v0.1**
+## Exercise 1.02: Project v0.1
 
 Create a web server that outputs "Server started in port NNNN" when it is started and deploy it into your Kubernetes cluster.
 
@@ -60,7 +60,7 @@ The Todo App version v0.1 has been published to Docker hub [frankhul/todo-app:v0
 
 ![Create Todo App v0.1 Deployment](1.02/img/1.02_create_todo_app_deployment.png)
 
-**Exercise 1.03: Declarative approach**
+## Exercise 1.03: Declarative approach
 
 In your "Log output" application create a folder for manifests and move your deployment into a declarative file.
 
@@ -78,7 +78,7 @@ The deployment declaration file for exercise 1.03 is [Exercise 1.03 Deployment](
 
 ![Declarative created log output app](1.03/img/1.03_declarative_created_log_output.png)
 
-**Exercise 1.04: Project v0.2**
+## Exercise 1.04: Project v0.2
 
 Create a deployment.yaml for the project.
 
@@ -94,7 +94,7 @@ The deployment declaration file for exercise 1.04 is [Exercise 1.04 Deployment](
 
 ![Declarative created todo app v0.1](1.04/img/1.04_declarative_created_todo_app_v0.1.png)
 
-**Exercise 1.05: Project v0.3**
+## Exercise 1.05: Project v0.3
 
 Have the project respond something to a GET request sent to the project. A simple html page is good or you can deploy something more complex like a single-page-application.
 
@@ -126,7 +126,7 @@ The deployment declaration file for exercise 1.05 is [Exercise 1.05 Deployment](
 
 ![Deployment creation for Todo app v0.3](1.05/img/1.05_todo_app_v0.3.png)
 
-**Exercise 1.06: Project v0.4**
+## Exercise 1.06: Project v0.4
 
 Use a NodePort Service to enable access to the project.
 
@@ -146,7 +146,7 @@ Creating the service.
 
 ![Todo App V0.3 Website](1.06/img/1.06_todo_app_v0.3_website.png)
 
-**Exercise 1.07: External access with Ingress**
+## Exercise 1.07: External access with Ingress
 
 "Log output" application currently outputs a timestamp and a random string to the logs.
 
@@ -176,7 +176,7 @@ The new version of the log-output application has been published on Docker hub [
 
 ![Exercise 1.07 Ingress Creation](1.07/img/1.07_ingress_creation.png)
 
-**Exercise 1.08: Project v0.5**
+## Exercise 1.08: Project v0.5
 
 Switch to using Ingress instead of NodePort to access the project.
 
@@ -206,7 +206,7 @@ The deployment file for exercise 1.07 is [Exercise 1.08 Deployment](../apps/todo
 
 ![Exercise 1.08 Ingress Creation](1.08/img/1.08_ingress_creation.png)
 
-**Exercise 1.09: More services**
+## Exercise 1.09: More services
 
 Develop a second application that simply responds with "pong 0" to a GET request and increases a counter (the 0) so that you can see how many requests have been sent. The counter should be in memory so it may reset at some point.
 
@@ -236,7 +236,7 @@ The ping pong image for the exercise 1.09 has been published to docker hub [fran
 
 ![Exercise 1.09 Log-output Access](1.09/img/1.09_logout_put_access.png)
 
-**Exercise 1.10: Even more services**
+## Exercise 1.10: Even more services
 
 Split the "Log output" application into two different containers within a single pod:
 
@@ -272,7 +272,7 @@ The image for the log-output writer is published on Docker hub [frankhul/log-out
 
 ![Exercise 1.10 Logs for the writer log output](1.10/img/1.10_logs_for_writer_log_output.png)
 
-**Exercise 1.11: Persisting data**
+## Exercise 1.11: Persisting data
 
 Let's share data between "Ping-pong" and "Log output" applications using persistent volumes. Create both a PersistentVolume and PersistentVolumeClaim and alter the Deployment to utilize it. As PersistentVolumes are often maintained by cluster administrators rather than developers and those are not application specific you should keep the definition for those separated, perhaps in own folder.
 
@@ -313,7 +313,7 @@ The ping pong service (clusterIP type) defination [Ping Pong Service](../apps/pi
 
 ![Persistent Volume Claim Creation](1.11/img/1.11_create_persistent_volume_claim.png)
 
-**Exercise 1.12: Project v0.6**
+## Exercise 1.12: Project v0.6
 
 The todo application is found in the following folder [Todo App v0.6](../apps/todo-app-v0.6/)
 
@@ -325,7 +325,7 @@ The manifest configuration of ingress, persistentVolume, persistentVolumeClaim, 
 
 ![Project v0.6](1.12/img/1.12_project_v0.6.png)
 
-**Exercise 1.13: Project v0.7**
+## Exercise 1.13: Project v0.7
 
 The todo application v0.7 is found in the following folder [Todo App v0.7](../apps/todo-app-v0.7/)
 
