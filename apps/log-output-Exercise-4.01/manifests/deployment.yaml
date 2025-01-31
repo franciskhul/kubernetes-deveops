@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-output
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-output
+  template:
+    metadata:
+      labels:
+        app: log-output
+    spec:
+      containers:
+        - name: log-output
+          image: frankhul/log-output:v0.5
+          readinessProbe:
+            httpGet:
+              path: /pingpong-count
+              port: 4000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            failureThreshold: 3
+            successThreshold: 1
+          env:
+          - name: PORT
+            value: "4002"
+          - name: PING_PONG_ENDPOINT
+            value: "http://ping-pong-svc:2345"
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "250Mi"
