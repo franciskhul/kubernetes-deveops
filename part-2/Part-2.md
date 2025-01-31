@@ -237,3 +237,27 @@ The image for the script that randomly create task has been published to docker 
 #### The screenshot showing the added random todo
 
 ![Randomly Todo Output](2.09/img/2.09_randomly_todo_output.png)
+
+**Exercise 2.10: Project v1.3**
+
+The project could really use logging.
+
+Add request logging so that you can monitor every todo that is sent to the backend.
+
+Set the limit of 140 characters for todos into the backend as well. Use Postman or curl to test that too long todos are blocked by the backend and you can see the non-allowed messages in your Grafana.
+
+Submission:
+
+The folder where the updated todo-app can be found in the following folder [Todo App V1.3](../apps/todo-app-v1.3/)
+
+The folder where the todo-backend with the loging and character limitation can be found in the following [Todo App V1.3 Backend](../apps/todo-app-v1.3/todo-backend/)
+
+The updated image of the todo-backend has been published to docker [frankhul/todo-backend:v0.3](https://hub.docker.com/repository/docker/frankhul/todo-backend/tags/v0.3/sha256-bc2a326b22db68394afda9c3d69d5d53bd68809b1822a7be96c59fc7d9fd64a8)
+
+#### Screenshot of prometheus logs on the todo backend
+
+[Prometheus Screenshot With Todo Backend Logs](2.10/img/2.10_prometheus_catching_tod_backend_logs.png)
+
+#### Screenshot of the submission of long todo in postman
+
+[Postman Screenshot with long todo](2.10/img/2.10_postman_submittion_long_todo.png)

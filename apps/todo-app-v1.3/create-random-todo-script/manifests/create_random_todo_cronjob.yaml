@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: random-todo-job
+spec:
+  # schedule: "0 * * * *"  # Runs every hour at minute 0
+  schedule: "* * * * *" # Runs every 1 minutes for testing
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: random-todo
+              image: frankhul/create-todo-script:v0.1  # Replace with the actual image name
+              imagePullPolicy: Always
+              env:
+                - name: TODO_BACKEND
+                  value: "http://todo-backend-svc:2345/todo-backend/todos"  # Replace with the correct URL of your Todo backend service
+          restartPolicy: OnFailure
