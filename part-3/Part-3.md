@@ -1,6 +1,6 @@
-### [Part 2](https://devopswithkubernetes.com/part-3)
+### [Part 3](https://devopswithkubernetes.com/part-3)
 
-**Exercises For Part 2:**
+**Exercises For Part 3**
 
 **Exercise 3.01: Pingpong GKE**
 
@@ -154,3 +154,15 @@ The todo-app project v1.5 can be found in the following folder [TODO APP v1.5](.
 Here is the todo-backend deployment with resource limit [Deployment](../apps/todo-app-v1.5/todo-backend/manifests/deployment.yaml)
 
 Here is the todo-app deployment with resource limit [Deployment](../apps/todo-app-v1.5/todo-app//manifests/deployment.yaml)
+
+**Exercise 3.09: Resource limits**
+
+Set sensible resource limits for the Ping-pong and Log output applications. The exact values are not important. Test what works.
+
+Submission
+
+The folder containing the ping pong and log out application can be found in the following folder [Ping Pong and Logoutput Resource limit](../apps/ping-pong-log-output-data-sharing-Exercise-3.09/)
+
+Here is the ping pong deployment with the resource limit [Deployment](../apps/ping-pong-log-output-data-sharing-Exercise-3.09/ping-pong/manifests/deployment.yaml)
+
+Here is the log output deployment with the resource limit [Deployment](../apps/ping-pong-log-output-data-sharing-Exercise-3.09/log-output/manifests/deployment.yaml)
