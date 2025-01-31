@@ -144,3 +144,36 @@ Submission
 
 - The resources manifests for the todo-backend that have been moved to the new namespace development can be found in the following folder
   [Namespaced Todo Backend Resources](../apps/todo-app-v1.1/todo-backend/manifests/)
+
+**Exercise 2.06**
+
+Create a ConfigMap for the "Log output" application. The ConfigMap should define one file information.txt and one env variable MESSAGE.
+
+The app should map the file as a volume, and set the environment variable and print the content of those besides the usual output:
+
+```
+file content: this text is from file
+env variable: MESSAGE=hello world
+2024-03-30T12:15:17.705Z: 8523ecb1-c716-4cb6-a044-b9e83bb98e43.
+Ping / Pongs: 3
+```
+
+Submission:
+
+The log-output for this exercise can be found in the following folder [Log Output(Exercise 2.06)](../apps/log-output-exercise-2.06/)
+
+The configMap for the log-output [ConfigMap Log output](../apps/log-output-exercise-2.06/manifests/log-output-configmap.yaml)
+
+The deployment for the log-output [Deployment Log output](../apps/log-output-exercise-2.06/manifests/deployment.yaml)
+
+The service for the log-output [Service Log output](../apps/log-output-exercise-2.06/manifests/service.yaml)
+
+The ingress for log-output [Ingress Log output](../apps/log-output-exercise-2.06/manifests/ingress.yaml)
+
+#### Screenshot for the creation of the log output configMap
+
+![ConfigMap Log output](2.06/img/2.06_configMap_creation.png)
+
+#### Screenshot for the log output output
+
+![Log output access](2.06/img/2.06_log_output_screenshot.png)
