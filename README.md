@@ -38,6 +38,24 @@ Parts:
 
 ### [Part 2](part-2/Part-2.md)
 
+[Exercise 2.01: Connecting pods](part-2/Part-2.md#exercise-201-connecting-pods)
+
+[Exercise 2.02: Project v1.0](part-2/Part-2.md#exercise-202-project-v10)
+
+[Exercise 2.03: Keep them separated](part-2/Part-2.md#exercise-203-keep-them-separated)
+
+[Exercise 2.04: Project v1.1](part-2/Part-2.md#exercise-204-project-v11)
+
+[Exercise 2.06: Documentation and ConfigMaps](part-2/Part-2.md#exercise-206-documentation-and-configmaps)
+
+[Exercise 2.07: Stateful applications](part-2/Part-2.md#exercise-207-stateful-applications)
+
+[Exercise 2.08 Project v1.2](part-2/Part-2.md#exercise-208-project-v12)
+
+[Exercise 2.09: Daily todos](part-2/Part-2.md#exercise-209-daily-todos)
+
+[Exercise 2.10: Project v1.3](part-2/Part-2.md#exercise-210-project-v13)
+
 ### [Part 3](part-3/Part-3.md)
 
 ### [Part 4](part-4/Part-4.md)

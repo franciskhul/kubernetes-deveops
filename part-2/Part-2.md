@@ -2,7 +2,7 @@
 
 **Exercises For Part 2:**
 
-**Exercise 2.01: Connecting pods**
+## Exercise 2.01: Connecting pods
 
 Connect the "Log output" application and "Ping-pong" application. Instead of sharing data via files use HTTP endpoints to respond with the number of pongs. Deprecate all the volume between the two applications for the time being.
 
@@ -35,7 +35,7 @@ The image for the Ping Pong Application has been published to docker hub [frankh
 
 ![Ping Pong Application Screenshot](2.01/img/2.01_ping_pong_screenshot.png)
 
-**Exercise 2.02: Project v1.0**
+## Exercise 2.02: Project v1.0
 
 Let us get back to our Project. In the previous part we added a random pic and a form for creating todos to the app. The next step is to create a new container that takes care of saving the todo items.
 
@@ -95,7 +95,7 @@ The ingress for the todo-app is in the following folder [Todo App Ingress](../ap
 
 [Todo App Access](2.02/img/2.2_todo_app_access.png)
 
-**Exercise 2.03: Keep them separated**
+## Exercise 2.03: Keep them separated
 
 Create a namespace for the applications in the exercises.
 
@@ -125,7 +125,7 @@ Submission
 
 - The service for the ping pong with namespace can be found [Namespaced Service](../apps/ping-pong/manifests/exercise_2.03/service.yaml)
 
-**Exercise 2.04: Project v1.1**
+## Exercise 2.04: Project v1.1
 
 Create a namespace for the project and move everything related to the project to that namespace.
 
@@ -145,7 +145,7 @@ Submission
 - The resources manifests for the todo-backend that have been moved to the new namespace development can be found in the following folder
   [Namespaced Todo Backend Resources](../apps/todo-app-v1.1/todo-backend/manifests/)
 
-**Exercise 2.06**
+## Exercise 2.06: Documentation and ConfigMaps
 
 Create a ConfigMap for the "Log output" application. The ConfigMap should define one file information.txt and one env variable MESSAGE.
 
@@ -178,7 +178,7 @@ The ingress for log-output [Ingress Log output](../apps/log-output-exercise-2.06
 
 ![Log output access](2.06/img/2.06_log_output_screenshot.png)
 
-**Exercise 2.07**
+## Exercise 2.07: Stateful applications
 
 Run a Postgres database and save the Ping-pong application counter into the database.
 
@@ -194,7 +194,7 @@ The postgres statefulset can be found in the following folder [Postgres Stateful
 
 - The service, deployment and ingress declaration files can also be found in the manifest folder [Manifest](../apps/ping-pong-exercise-2.07/manifests/)
 
-**Exercise 2.08 Project v1.2**
+## Exercise 2.08 Project v1.2
 
 Create a database and save the todos there. Again, the database should have its own pod.
 
@@ -214,7 +214,7 @@ The image for the todo-backend has been published to docker hub [frankhul/todo-b
 
 The image for the todo-app has been published to docker hub [frankhul/todo-app:v0.9](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.9/sha256:6c6999fb12e2d837b07bd1db41f16a8ab5bc88cd3cac0225d6b3bd3a75ab5d0a)
 
-**Exercise 2.09: Daily todos**
+## Exercise 2.09: Daily todos
 
 Create a CronJob that generates a new todo every hour to remind you to do 'Read < URL >'.
 
@@ -238,7 +238,7 @@ The image for the script that randomly create task has been published to docker 
 
 ![Randomly Todo Output](2.09/img/2.09_randomly_todo_output.png)
 
-**Exercise 2.10: Project v1.3**
+## Exercise 2.10: Project v1.3
 
 The project could really use logging.
 
