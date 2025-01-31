@@ -2,7 +2,7 @@
 
 **Exercises For Part 3**
 
-**Exercise 3.01: Pingpong GKE**
+## Exercise 3.01: Pingpong GKE
 
 Deploy Ping-pong application into GKE.
 
@@ -31,7 +31,7 @@ The service.yaml, postgres-statefulset.yaml, deployment.yaml and postgres-config
 
 ![External IP Address of Service](3.01/img/3.01_loadbalancer_service_creation.png)
 
-**Exercise 3.02: Back to Ingress**
+## Exercise 3.02: Back to Ingress
 
 Deploy the "Log output" and "Ping-pong" applications into GKE and expose it with Ingress.
 
@@ -59,7 +59,7 @@ The ping-pong service declaration can be found at [Ping Pong Service](../apps/pi
 
 ![ServiceApp Ingress](3.02/img/3.02_service_ingress.png)
 
-**Exercise 3.06: DBaaS vs DIY**
+## Exercise 3.06: DBaaS vs DIY
 
 Do a pros/cons comparison of the solutions in terms of meaningful differences. This includes at least the required work and costs to initialize as well as the maintenance. Backup methods and their ease of usage should be considered as well.
 
@@ -143,7 +143,7 @@ Submission:
     - More complexity in managing reliable backups, requiring additional resources for disaster recovery.
     - Backups must be regularly tested and manually handled.
 
-**Exercise 3.08: Project v1.5**
+## Exercise 3.08: Project v1.5
 
 Set sensible resource limits for the project. The exact values are not important. Test what works.
 
@@ -155,7 +155,7 @@ Here is the todo-backend deployment with resource limit [Deployment](../apps/tod
 
 Here is the todo-app deployment with resource limit [Deployment](../apps/todo-app-v1.5/todo-app//manifests/deployment.yaml)
 
-**Exercise 3.09: Resource limits**
+## Exercise 3.09: Resource limits
 
 Set sensible resource limits for the Ping-pong and Log output applications. The exact values are not important. Test what works.
 

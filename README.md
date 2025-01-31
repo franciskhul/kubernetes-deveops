@@ -58,4 +58,14 @@ Parts:
 
 ### [Part 3](part-3/Part-3.md)
 
+[Exercise 3.01: Pingpong GKE](part-3/Part-3.md#exercise-301-pingpong-gke)
+
+[Exercise 3.02: Back to Ingress](part-3/Part-3.md#exercise-302-back-to-ingress)
+
+[Exercise 3.06: DBaaS vs DIY](part-3/Part-3.md#exercise-306-dbaas-vs-diy)
+
+[Exercise 3.08: Project v1.5](part-3/Part-3.md#exercise-308-project-v15)
+
+[Exercise 3.09: Resource limits](part-3/Part-3.md#exercise-309-resource-limits)
+
 ### [Part 4](part-4/Part-4.md)
