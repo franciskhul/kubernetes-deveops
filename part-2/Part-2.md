@@ -213,3 +213,27 @@ The postgresql configMap used in the postgresql statefulset can be found in here
 The image for the todo-backend has been published to docker hub [frankhul/todo-backend:v0.2](https://hub.docker.com/repository/docker/frankhul/todo-backend/tags/v0.2/sha256:5b5f9a3ee2ee5da4d5ed0ea4e7180b266a571d04f7a43d78b2c35f938902e0f3)
 
 The image for the todo-app has been published to docker hub [frankhul/todo-app:v0.9](https://hub.docker.com/repository/docker/frankhul/todo-app/tags/v0.9/sha256:6c6999fb12e2d837b07bd1db41f16a8ab5bc88cd3cac0225d6b3bd3a75ab5d0a)
+
+**Exercise 2.09: Daily todos**
+
+Create a CronJob that generates a new todo every hour to remind you to do 'Read < URL >'.
+
+Where < URL > is a Wikipedia article that was decided by the job randomly. It does not have to be a hyperlink, the user can copy-paste the URL from the todo.
+
+https://en.wikipedia.org/wiki/Special:Random responds with a redirect to a random Wikipedia page so you can ask it to provide a random article for you to read. TIP: Check location header
+
+Submission
+
+The cronjob declaration file can be found here [Random Todo Cronjob](../apps/todo-app-v1.2/create-random-todo-script/manifests/create_random_todo_cronjob.yaml)
+
+The script for randomly create a todo can be found here [Random Create Todo](../apps/todo-app-v1.2/create-random-todo-script/index.js)
+
+The image for the script that randomly create task has been published to docker hub [frankhul/create-todo-script:v0.1](https://hub.docker.com/repository/docker/frankhul/create-todo-script/tags/v0.1/sha256-e61afd88a8a31675c04eb06255aed2a664efa0915555c6ccd1f3d9e15cd0c4bf)
+
+#### The screenshot for the creation of the cronjob
+
+![Cronjob Creation](2.09/img/2.09_cronjob_creation.png)
+
+#### The screenshot showing the added random todo
+
+![Randomly Todo Output](2.09/img/2.09_randomly_todo_output.png)
