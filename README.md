@@ -71,3 +71,5 @@ Parts:
 ### [Part 4](part-4/Part-4.md)
 
 [Exercise 4.01: Readiness Probe](part-4/Part-4.md#exercise-401-readiness-probe)
+
+[Exercise 4.02: Project v1.7](part-4/Part-4.md#exercise-402-project-v17)
