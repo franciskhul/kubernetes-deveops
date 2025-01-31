@@ -29,3 +29,25 @@ Submission
 - The log ouput application for this exercise can be found in the following folder [Logout ReadinessProbe](../apps/log-output-Exercise-4.01/)
 
 - Here is the log output deployment declaration with Readiness probe [Log output Readiness](../apps/log-output-Exercise-4.01/manifests/deployment.yaml)
+
+## Exercise 4.02: Project v1.7
+
+Create the required probes and endpoint for The Project to ensure that it's working and connected to a database.
+
+Test that the probe indeed works with a version without database access, for example by supplying a wrong database URL or credentials.
+
+Submission
+
+- The two application can be found on the following folder [Todo App](../apps/todo-app-v1.7/)
+
+1. Todo App
+
+- The todo app applicatioin for this exercise can be found in the following folder [Todo App](../apps/todo-app-v1.7/todo-app/)
+
+- The todo app deployment declaration with Readiness probe [Todo App Readiness](../apps/todo-app-v1.7/todo-app/manifests/deployment.yaml)
+
+2. Todo Backend
+
+- The todo backend applicatioin for this exercise can be found in the following folder [Todo backend](../apps/todo-app-v1.7/todo-backend/)
+
+- The todo backend deployment declaration with Readiness probe [Todo backend Readiness](../apps/todo-app-v1.7/todo-backend/manifests/deployment.yaml)
